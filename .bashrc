@@ -1,5 +1,7 @@
 export PATH="/usr/local/bin:$PATH"
 
+source ~/.zsh/.myaliases
+
 # Prompt
 export PS1="\w $ "
 
@@ -11,12 +13,6 @@ export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad
 alias ls='ls -GFh'
 
-alias reload="source ~/.bash_profile"
-
-alias art="php artisan"
-alias phpunit="./vendor/bin/phpunit"
-alias view-gitignore="git ls-files --ignored --exclude-standard"
-alias apply-gitignore="git ls-files --ignored --exclude-standard | sed 's/.*/\"&\"/' | xargs git rm -r --cached"
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
