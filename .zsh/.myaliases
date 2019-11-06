@@ -1,1 +1,1 @@
-alias dfgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=/Users/nathan'
+alias cgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=/Users/nathan'
