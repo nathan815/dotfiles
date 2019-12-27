@@ -19,7 +19,7 @@ export PATH="~/.composer/vendor/bin:$PATH"
 
 # Node Version Manager
 export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use
 
 # Set Spaceship ZSH as a prompt
 #export SPACESHIP_PACKAGE_SHOW=false
