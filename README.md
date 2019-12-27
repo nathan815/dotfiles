@@ -1,9 +1,6 @@
 # dotfiles
 
-This repo is for storing and versioning my dotfiles.
-
-## Inspiration
-Originally based on [Atlassian's tutorial](https://www.atlassian.com/git/tutorials/dotfiles).
+This repo is for storing and versioning my dotfiles. Originally based a [tutorial](https://www.atlassian.com/git/tutorials/dotfiles) from Atlassian.
 
 ## Usage
 Use cgit command to manage config files.
