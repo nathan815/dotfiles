@@ -1,0 +1,24 @@
+# This is Git's per-user configuration file.
+[user]
+      # These values are set in ~/.gitconfig_local
+
+[include]
+	path = ~/.gitconfig_local
+
+[push]
+	default = simple
+[core]
+	autocrlf = input
+	excludesfile = ~/.gitignore_global
+[alias]
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	resup = reset --hard @{u}
+[merge]
+	conflictstyle = merge
+[rerere]
+	enabled = true
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+	required = true
