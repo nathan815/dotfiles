@@ -14,12 +14,11 @@ load_config ~/.zsh/prompt
 autoload -U select-word-style
 select-word-style bash
 
-# Composer
-export PATH="~/.composer/vendor/bin:$PATH"
+export PATH="~/Library/Android/sdk:~/Library/Android/sdk/platform-tools:~/.composer/vendor/bin:$PATH"
 
 # Node Version Manager
 export NVM_DIR=~/.nvm
-[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" --no-use
+[ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh" #--no-use
 
 # Set Spaceship ZSH as a prompt
 #export SPACESHIP_PACKAGE_SHOW=false
@@ -28,4 +27,7 @@ export NVM_DIR=~/.nvm
 
 # Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
 export PATH="$PATH:$HOME/.rvm/bin"
+
+
+test -e "${HOME}/.iterm2_shell_integration.zsh" && source "${HOME}/.iterm2_shell_integration.zsh"
 
