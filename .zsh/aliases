@@ -1,7 +1,12 @@
 alias art="php artisan"
+
 alias phpunit="./vendor/bin/phpunit"
+
 alias view-gitignore="git ls-files --ignored --exclude-standard"
+
 alias apply-gitignore="git ls-files --ignored --exclude-standard | sed 's/.*/\"&\"/' | xargs git rm -r --cached"
+
+alias prune-branches="git branch --merged | egrep -v "(^\*|master|main|dev)" | xargs git branch -d" # deletes merged local branches
 
 # Git for dotfiles
 alias cgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
