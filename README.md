@@ -10,4 +10,7 @@ All files in this directory (besides ./scripts and some others) are symlinked to
 Creates symlinks in home directory.
 
 ### Bootstrap Machine: `./scripts/bootstrap.sh`
-Installs homebrew dependencies (macOS).
+Bootstraps a new machine.
+
+* Installs homebrew dependencies (macOS).
+* Links config files
