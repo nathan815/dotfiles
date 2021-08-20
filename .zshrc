@@ -10,7 +10,7 @@ load_config ~/.zsh/completion
 load_config ~/.zsh/aliases
 load_config ~/.zsh/functions
 load_config ~/.zsh/prompt
-load_config ~/.zsh/secret_exports
+load_config ~/.zsh/secrets
 
 autoload -U select-word-style
 select-word-style bash
