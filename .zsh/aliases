@@ -8,9 +8,6 @@ alias git-apply-ignore="git ls-files --ignored --exclude-standard | sed 's/.*/\"
 
 alias git-prune-branches="git branch --merged | egrep -v '(^\*|master|main|dev)' | xargs git branch -d" # deletes merged local branches
 
-# Git for dotfiles
-alias cgit='/usr/bin/git --git-dir=$HOME/.dotfiles/ --work-tree=$HOME'
-
 # Improve ls
 export CLICOLOR=1
 export LSCOLORS=ExFxBxDxCxegedabagacad

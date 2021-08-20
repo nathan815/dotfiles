@@ -1,10 +1,13 @@
-# dotfiles
+# Nathan's Dotfiles
 
-This repo is for storing and versioning my dotfiles. Originally based a [tutorial](https://www.atlassian.com/git/tutorials/dotfiles) from Atlassian.
+All my dotfiles!
+
+All files in this directory (besides ./scripts and some others) are symlinked to the home directory.
 
 ## Usage
-Use cgit command to manage config files.
 
-cgit is an alias of git with working directory set to `$HOME` (defined in `.zsh/aliases`).
+### Link Files: `./scripts/link.sh`
+Creates symlinks in home directory.
 
-All files are hidden by default until explictly added with `cgit add [file]`.
+### Bootstrap Machine: `./scripts/bootstrap.sh`
+Installs homebrew dependencies (macOS).
