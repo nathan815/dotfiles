@@ -5,7 +5,7 @@ fpath=(~/.zsh $fpath)
 autoload -Uz compinit && compinit
 
 # Heroku completion
-HEROKU_AC_BASH_SETUP_PATH=/Users/nathan/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PA
+HEROKU_AC_BASH_SETUP_PATH=$HOME/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PA
 
 # ZSH Completion inline
 #export ZSH_AUTOSUGGEST_STRATEGY=(history completion)
