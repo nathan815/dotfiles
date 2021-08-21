@@ -1,4 +1,0 @@
-function reload() {
-        source ~/.zshrc
-        echo "Reloaded from ~/.zshrc"
-}
