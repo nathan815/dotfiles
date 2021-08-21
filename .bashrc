@@ -1,4 +1,6 @@
-source ~/.dotfiles_base/base.sh
+source ~/.shell_config/base.sh
+
+load_config ~/.bash/prompt.sh
 
 function reload() {
     source ~/.bashrc

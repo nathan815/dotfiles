@@ -1,4 +1,4 @@
-source ~/.dotfiles_base/base.sh
+source ~/.shell_config/base.sh
 
 function reload() {
     source ~/.zshrc

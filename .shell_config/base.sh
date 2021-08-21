@@ -8,8 +8,8 @@ function load_config() {
 	fi
 }
 
-load_config ~/.dotfiles_base/aliases.sh
-load_config ~/.dotfiles_base/functions.sh
+load_config ~/.shell_config/aliases.sh
+load_config ~/.shell_config/functions.sh
 
 # Android
 export PATH="$PATH:/usr/local/bin:~/Library/Android/sdk:~/Library/Android/sdk/platform-tools"
