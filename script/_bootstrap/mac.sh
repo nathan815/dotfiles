@@ -1,5 +1,10 @@
+#!/bin/bash
+
 # Install Homebrew
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+if ! brew_loc="$(type -p "brew")" || [[ -z $brew_loc ]]; then
+    echo "Installing Homebew..."
+    /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+fi
 
 brew update
 brew upgrade

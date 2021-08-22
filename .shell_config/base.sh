@@ -3,8 +3,7 @@ function load_config() {
 	if [ -f $file ]; then
         source $file
 	else
-        me=`basename "$0"`
-        print "[~/.profile] config file not found: $file"
+        print "Error: config file not found: $file"
 	fi
 }
 
