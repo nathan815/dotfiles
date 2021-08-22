@@ -1,7 +1,7 @@
 #!/bin/bash
 
 # Usage:
-#  ./scripts/link.sh [-d|--dryrun] [-o|--override]
+#  ./script/link.sh [-d|--dryrun] [-o|--override]
 
 while test $# -gt 0
 do
@@ -16,7 +16,7 @@ do
     shift
 done
 
-EXCLUDE='scripts/*|\.excl*|\.git$|\.gitignore$|\.gitmodules|.*.md|.DS_Store'
+EXCLUDE='script/*|\.excl*|\.git$|\.gitignore$|\.gitmodules|.*.md|.DS_Store'
 
 function link() {
   for file in $( ls -A | grep -vE "$EXCLUDE" ) ; do
