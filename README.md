@@ -1,8 +1,8 @@
-# Nathan's Dotfiles
+# nathan815's Dotfiles
 
-All my dotfiles!
+Home for my dotfiles and bootstrap scripts!
 
-All files in this directory (besides ./scripts and some others) are symlinked to the home directory.
+All files here (besides ./scripts and some others) are symlinked to the home directory.
 
 ## Usage
 
@@ -12,5 +12,5 @@ Creates symlinks in home directory.
 ### Bootstrap Machine: `./scripts/bootstrap.sh`
 Bootstraps a new machine.
 
-* Installs homebrew dependencies (macOS).
 * Links config files
+* macOS: Installs homebrew dependencies
