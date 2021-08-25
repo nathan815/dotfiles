@@ -7,8 +7,5 @@ function reload() {
     echo "Reloaded from ~/.bashrc"
 }
 
-# Prompt
-export PS1="\w $ "
-
 # Add iTerm2 Shell Integration
 test -e "${HOME}/.iterm2_shell_integration.bash" && source "${HOME}/.iterm2_shell_integration.bash"
