@@ -6,10 +6,10 @@ All files here (besides ./scripts and some others) are symlinked to the home dir
 
 ## Usage
 
-### Link Files: `./scripts/link.sh`
+### Link Files: `./script/link.sh`
 Creates symlinks in home directory.
 
-### Bootstrap Machine: `./scripts/bootstrap.sh`
+### Bootstrap Machine: `./script/bootstrap.sh`
 Bootstraps a new machine.
 
 * Links config files
