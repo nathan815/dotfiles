@@ -9,8 +9,7 @@ All files here (besides ./scripts and some others) are symlinked to the home dir
 ### Link Files: `./script/link.sh`
 Creates symlinks in home directory.
 
-### Bootstrap Machine: `./script/bootstrap.sh`
-Bootstraps a new machine.
+### Bootstrap: `./script/bootstrap.sh`
 
-* Links config files
-* macOS: Installs homebrew dependencies
+* Runs link script
+* [macOS] Installs homebrew packages
