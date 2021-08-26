@@ -19,6 +19,12 @@
 	br = branch
 	unstage = reset HEAD --
 	last = log -1 HEAD
+	# list files ignored
+	ignored = status --ignored
+	# removes files newly added to .gitignore
+	apply-ignore = ! git ls-files --ignored --exclude-standard -c | sed 's/.*/\"&\"/' | xargs git rm -r --cached
+	# deletes merged local branches
+	#prune-branches = "! git branch --merged | egrep -v '(^\*|master|main|dev)' | xargs git branch -d"
 [merge]
 	conflictstyle = merge
 [rerere]
