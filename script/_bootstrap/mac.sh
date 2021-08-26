@@ -30,3 +30,6 @@ brew install azure-cli
 
 # Docker
 brew install docker
+
+# Ruby
+brew install ruby@3.0.0

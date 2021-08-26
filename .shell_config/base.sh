@@ -16,8 +16,9 @@ export PATH="$PATH:/usr/local/bin:~/Library/Android/sdk:~/Library/Android/sdk/pl
 # Composer (PHP)
 export PATH="$PATH:~/.composer/vendor/bin"
 
-# RVM (Ruby)
+# Ruby
 export PATH="$PATH:$HOME/.rvm/bin"
+export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
 
 # Node Version Manager
 # export NVM_DIR=~/.nvm
