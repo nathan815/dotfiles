@@ -9,3 +9,8 @@ function to_lower() {
   read stdin
   echo "$stdin" | awk '{print tolower($0)}'
 }
+
+function del() {
+    mv "$1" ~/.Trash
+    echo "Moved $1 to ~/.Trash"
+}
