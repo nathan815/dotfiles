@@ -16,11 +16,6 @@ brew install pure
 # Use latest version of Git instead of Apple Git
 brew install git
 
-# Java
-brew install openjdk@11
-echo "Linking openjdk for system wrapper"
-sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
-
 # NodeJS
 brew install node
 brew install yarn
@@ -36,3 +31,8 @@ brew install gh
 
 # Ruby
 brew install ruby@3
+
+# Java
+brew install openjdk@11
+echo "Linking openjdk for system wrapper"
+sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-11.jdk
