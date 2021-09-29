@@ -23,9 +23,6 @@ brew install yarn
 # Azure
 brew install azure-cli
 
-# Docker
-brew install docker
-
 # GitHub CLI
 brew install gh
 
