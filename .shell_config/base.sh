@@ -22,15 +22,15 @@ export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
 
 # Node Version Manager
 # Lazy load it to keep shell startup fast
-function nvm() {
-	if [ "$NVM_DIR" = "" ]; then
+if [ "$NVM_DIR" = "" ]; then
+	function nvm() {
 		echo "[loading nvm...]" > /dev/tty
 		export NVM_DIR="$HOME/.nvm"
 		[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
 		[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-	fi
-	nvm "$@"
-}
+		nvm "$@"
+	}
+fi
 
 # heroku autocomplete setup
 HEROKU_AC_BASH_SETUP_PATH=$HOME/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
