@@ -31,5 +31,8 @@ brew install azure-cli
 # Docker
 brew install docker
 
+# GitHub CLI
+brew install gh
+
 # Ruby
-brew install ruby@3.0.0
+brew install ruby@3
