@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
 parent_path=$( cd "$(dirname "${BASH_SOURCE[0]}")" ; pwd -P )
 
@@ -13,3 +13,5 @@ else
     echo "Running Linux bootstrap..."
     source "$parent_path/os_bootstrap/linux.sh"
 fi
+
+PROFILE=/dev/null bash "$parent_path/installers/nvm.sh"
