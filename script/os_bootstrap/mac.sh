@@ -16,8 +16,8 @@ brew install pure
 # Use latest version of Git instead of Apple Git
 brew install git
 
-# NodeJS
-brew install node
+# Node Version Manager to use multiple versions of Node
+brew install nvm
 brew install yarn
 
 # Azure
