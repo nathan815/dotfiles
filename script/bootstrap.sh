@@ -8,8 +8,8 @@ echo "OS Type: $OSTYPE"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Running macOS bootstrap..."
-    source "$parent_path/_bootstrap/mac.sh"
+    source "$parent_path/os_bootstrap/mac.sh"
 else
     echo "Running Linux bootstrap..."
-    source "$parent_path/_bootstrap/linux.sh"
+    source "$parent_path/os_bootstrap/linux.sh"
 fi
