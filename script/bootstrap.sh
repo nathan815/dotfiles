@@ -14,4 +14,6 @@ else
     source "$parent_path/os_bootstrap/linux.sh"
 fi
 
-PROFILE=/dev/null bash "$parent_path/installers/nvm.sh"
+NVM_VERSION="v0.38.0"
+echo "Installing nvm $NVM_VERSION"
+curl -o- "https://raw.githubusercontent.com/nvm-sh/nvm/$NVM_VERSION/install.sh" | PROFILE=/dev/null bash
