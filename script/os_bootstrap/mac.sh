@@ -16,14 +16,11 @@ brew install pure
 # Use latest version of Git instead of Apple Git
 brew install git
 
-# Yarn (npm alternative)
-brew install yarn
-
-# Azure
+# Utilities
+brew install yarn # Yarn (npm alternative)
 brew install azure-cli
-
-# GitHub CLI
 brew install gh
+brew install jq
 
 # Ruby
 brew install ruby@3
@@ -35,3 +32,6 @@ if [ ! -L "$jdk_system_wrapper" ]; then
     echo "Linking openjdk for system wrapper (requires root)"
     sudo ln -sfn /usr/local/opt/openjdk@11/libexec/openjdk.jdk "$jdk_system_wrapper"
 fi
+
+# Docker Desktop
+brew install --cask docker
