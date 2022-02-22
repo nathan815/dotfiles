@@ -19,6 +19,7 @@
 	br = branch
 	unstage = reset HEAD --
 	last = log -1 HEAD
+	pushn = push -u origin HEAD
 	# list files ignored
 	ignored = status --ignored
 	# removes files newly added to .gitignore
