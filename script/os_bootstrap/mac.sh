@@ -21,6 +21,7 @@ brew install yarn # Yarn (npm alternative)
 brew install azure-cli
 brew install gh
 brew install jq
+brew install watch
 
 # Ruby
 brew install ruby@3

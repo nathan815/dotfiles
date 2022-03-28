@@ -3,39 +3,40 @@
       # These values are set in ~/.gitconfig_local
 
 [include]
-	path = ~/.gitconfig_local
+    path = ~/.gitconfig_local
 
 [push]
-	default = simple
+    default = simple
 [core]
-	autocrlf = input
-	excludesfile = ~/.gitignore_global
+    autocrlf = input
+    excludesfile = ~/.gitignore_global
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
-	resup = reset --hard @{u}
-	st = status
-	ci = commit
-	co = checkout
-	br = branch
-	unstage = reset HEAD --
-	last = log -1 HEAD
-	pushn = push -u origin HEAD
-	# list files ignored
-	ignored = status --ignored
-	# removes files newly added to .gitignore
-	apply-ignore = ! git ls-files --ignored --exclude-standard -c | sed 's/.*/\"&\"/' | xargs git rm -r --cached
-	# deletes merged local branches
-	#prune-branches = "! git branch --merged | egrep -v '(^\*|master|main|dev)' | xargs git branch -d"
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    rebase = rebase --committer-date-is-author-date
+    resup = reset --hard @{u}
+    st = status
+    ci = commit
+    co = checkout
+    br = branch
+    unstage = reset HEAD --
+    last = log -1 HEAD
+    pushn = push -u origin HEAD
+    # list files ignored
+    ignored = status --ignored
+    # removes files newly added to .gitignore
+    apply-ignore = ! git ls-files --ignored --exclude-standard -c | sed 's/.*/\"&\"/' | xargs git rm -r --cached
+    # deletes merged local branches
+    #prune-branches = "! git branch --merged | egrep -v '(^\*|master|main|dev)' | xargs git branch -d"
 [merge]
-	conflictstyle = merge
+    conflictstyle = merge
 [rerere]
-	enabled = true
+    enabled = true
 [filter "lfs"]
-	clean = git-lfs clean -- %f
-	smudge = git-lfs smudge -- %f
-	process = git-lfs filter-process
-	required = true
+    clean = git-lfs clean -- %f
+    smudge = git-lfs smudge -- %f
+    process = git-lfs filter-process
+    required = true
 [pull]
-	ff = only
+    ff = only
 [init]
-	defaultBranch = main
+    defaultBranch = main
