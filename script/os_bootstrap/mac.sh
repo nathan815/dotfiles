@@ -22,6 +22,7 @@ brew install azure-cli
 brew install gh
 brew install jq
 brew install watch
+brew install httpie
 
 # Ruby
 brew install ruby@3
