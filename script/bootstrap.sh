@@ -8,10 +8,10 @@ echo "OS Type: $OSTYPE"
 
 if [[ "$OSTYPE" == "darwin"* ]]; then
     echo "Running macOS bootstrap..."
-    source "$parent_path/os_bootstrap/mac.sh"
+    source "$parent_path/bootstrap/mac.sh"
 else
     echo "Running Linux bootstrap..."
-    source "$parent_path/os_bootstrap/linux.sh"
+    source "$parent_path/bootstrap/linux.sh"
 fi
 
 NVM_VERSION="v0.38.0"
