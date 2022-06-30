@@ -7,7 +7,7 @@ Invoke-Expression ((New-Object System.Net.WebClient).DownloadString('https://com
 Set-ExecutionPolicy RemoteSigned -Scope Process -Force;
 
 # Install Chocolately packages
-choco install -y git gh sudo cygwin make sudo docker docker-desktop azure-cli -y
+choco install -y oh-my-posh git gh sudo cygwin make sudo docker docker-desktop azure-cli -y
 
 # PS Modules
 Set-PSRepository PSGallery -InstallationPolicy Trusted
