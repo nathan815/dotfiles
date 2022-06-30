@@ -1,4 +1,4 @@
-$dotfilesRepoPath = (Get-Item $PSScriptRoot).Parent.Parent.FullName
+$dotfilesRepo = (Get-Item $PSScriptRoot).Parent.Parent.FullName
 
 # Install Chocolately package manager
 Set-ExecutionPolicy Bypass -Scope Process -Force;
@@ -13,6 +13,8 @@ choco install -y git gh sudo cygwin make sudo docker docker-desktop azure-cli -y
 Set-PSRepository PSGallery -InstallationPolicy Trusted
 Install-Module PowerBash
 Install-Module posh-git
+Install-Module -Name PSReadLine -AllowPrerelease
+
 
 # Profile
 if (! (Test-Path -Path $PROFILE)) {
@@ -20,5 +22,6 @@ if (! (Test-Path -Path $PROFILE)) {
 }
 
 if (!(Get-Content $PROFILE -Raw).contains("oh-my-posh init")) {
-    Add-Content -Path $PROFILE -Value "oh-my-posh init pwsh --config $dotfilesRepoPath/oh-my-posh/amro.omp.json | Invoke-Expression"
+    $ompTheme = Join-Path -Path $dotfilesRepo -ChildPath "oh-my-posh/amro.omp.json"
+    Add-Content -Path $PROFILE -Value "oh-my-posh init pwsh --config $ompTheme | Invoke-Expression"
 }
