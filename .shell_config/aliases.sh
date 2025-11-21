@@ -6,6 +6,7 @@ alias ls='ls -GFh'
 alias c='clear'
 alias h='history'
 alias j='jobs -l'
+alias k='kubectl'
 
 # Quick way to get out of current directory
 alias ..='cd ..'

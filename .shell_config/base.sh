@@ -21,16 +21,23 @@ export PATH="$PATH:$HOME/.rvm/bin"
 export PATH="/usr/local/opt/ruby/bin:/usr/local/lib/ruby/gems/3.0.0/bin:$PATH"
 
 # Node Version Manager
-# Lazy load it to keep shell startup fast
-if [ "$NVM_DIR" = "" ]; then
-	function nvm() {
-		echo "[loading nvm...]" > /dev/tty
-		export NVM_DIR="$HOME/.nvm"
-		[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-		[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-		nvm "$@"
-	}
-fi
+# Lazy-load NVM so shell stays fast
+export NVM_DIR="$HOME/.nvm"
+
+load_nvm() {
+  unset -f node npm npx nvm
+  [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"
+  [ -s "$NVM_DIR/bash_completion" ] && . "$NVM_DIR/bash_completion"
+}
+
+nvm() { load_nvm; nvm "$@"; }
+node() { load_nvm; node "$@"; }
+npm() { load_nvm; npm "$@"; }
+npx() { load_nvm; npx "$@"; }
+
 
 # heroku autocomplete setup
-HEROKU_AC_BASH_SETUP_PATH=$HOME/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
+#HEROKU_AC_BASH_SETUP_PATH=$HOME/Library/Caches/heroku/autocomplete/bash_setup && test -f $HEROKU_AC_BASH_SETUP_PATH && source $HEROKU_AC_BASH_SETUP_PATH;
+
+# Go
+export PATH="$PATH:$HOME/go/bin"

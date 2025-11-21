@@ -23,6 +23,7 @@ brew install gh
 brew install jq
 brew install watch
 brew install httpie
+brew install glow
 
 # Ruby
 brew install ruby@3
