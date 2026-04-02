@@ -3,3 +3,7 @@
 if (Test-Path $PSScriptRoot/profile_pslegacy.private.ps1) {
     . $PSScriptRoot/profile_pslegacy.private.ps1
 }
+
+function apwsh() {
+    Start-Process powershell -Verb runAs $args
+}

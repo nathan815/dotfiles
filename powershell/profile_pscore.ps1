@@ -7,3 +7,7 @@ Import-Module posh-git
 if (Test-Path $PSScriptRoot/profile_pscore.private.ps1) {
     . $PSScriptRoot/profile_pscore.private.ps1
 }
+
+function apwsh() {
+    Start-Process pwsh -Verb runAs $args
+}

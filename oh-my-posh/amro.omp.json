@@ -6,36 +6,31 @@
       "alignment": "left",
       "segments": [
         {
-          "properties": {
-            "cache_duration": "none"
-          },
+          "style": "plain",
           "template": "\uf508 {{ .UserName }} on",
           "foreground": "#45F1C2",
-          "type": "session", 
-          "style": "plain"
+          "type": "session"
         },
         {
           "properties": {
-            "cache_duration": "none",
             "folder_separator_icon": "/",
             "style": "full"
           },
+          "style": "plain",
           "template": " \uf07b {{ .Path }} ",
           "foreground": "#0CA0D8",
-          "type": "path",
-          "style": "plain"
+          "type": "path"
         },
         {
           "properties": {
-            "cache_duration": "none",
             "fetch_stash_count": true,
             "fetch_upstream_icon": true
           },
+          "style": "plain",
           "template": "{{ .UpstreamIcon }}{{ .HEAD }}{{ if gt .StashCount 0 }} \uf692 {{ .StashCount }}{{ end }} ",
           "foreground": "#14A5AE",
           "powerline_symbol": "\ue0b0",
-          "type": "git",
-          "style": "plain"
+          "type": "git"
         }
       ]
     },
@@ -44,22 +39,16 @@
       "alignment": "left",
       "segments": [
         {
-          "properties": {
-            "cache_duration": "none"
-          },
+          "style": "plain",
           "template": "\ue3bf ",
           "foreground": "#cd5e42",
-          "type": "root",
-          "style": "plain"
+          "type": "root"
         },
         {
-          "properties": {
-            "cache_duration": "none"
-          },
-          "template": "$ ",
+          "style": "plain",
+          "template": "# ",
           "foreground": "#CD4277",
-          "type": "text",
-          "style": "plain"
+          "type": "text"
         }
       ],
       "newline": true
